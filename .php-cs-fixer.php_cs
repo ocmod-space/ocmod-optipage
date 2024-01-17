@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 /*
  * This document has been generated with
  * https://mlocati.github.io/php-cs-fixer-configurator/#version:3.2.1|configurator
@@ -17,11 +15,10 @@ return $config
 	->setRules([
 		'@PSR2'                                         => true,
 		'@Symfony'                                      => false,
-		// '@PER-CS2.0'                                       => true,
 		'@DoctrineAnnotation'                           => true,
 		'@PHPUnit100Migration:risky'                    => true,
 		'@PHP74Migration'                               => true,
-		'@PHP74Migration:risky'                         => true,
+		'@PHP74Migration:risky'                         => false,
 		'align_multiline_comment'                       => true,
 		'array_indentation'                             => true,
 		'array_syntax'                                  => ['syntax' => 'short'],
@@ -84,13 +81,13 @@ return $config
 		'explicit_indirect_variable'                    => true,
 		'explicit_string_variable'                      => true,
 		'full_opening_tag'                              => true,
-		'fully_qualified_strict_types'                  => true,
+		'fully_qualified_strict_types'                  => false,
 		'function_declaration'                          => ['closure_function_spacing' => 'none'],
 		'function_to_constant'                          => true,
 		'function_typehint_space'                       => true,
 		'general_phpdoc_tag_rename'                     => ['replacements' => ['inheritDocs' => 'inheritDoc']],
-		'heredoc_indentation'                           => true,
-		'heredoc_to_nowdoc'                             => true,
+		'heredoc_indentation'                           => ['indentation' => 'same_as_start'],
+		'heredoc_to_nowdoc'                             => false,
 		'include'                                       => false,
 		'indentation_type'                              => true,
 		'integer_literal_case'                          => true,
