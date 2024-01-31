@@ -3,6 +3,7 @@
 ## [1.0.3] - 2024-01-31:
 ### Fixed
 - `width` and `height` attributes will no add if appropriate style properties exist.
+- Some image were not replaced with webp after converting image source paths to the relative type.
 
 ## [1.0.2] - 2024-01-17:
 ### Fixed
