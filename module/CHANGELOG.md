@@ -1,8 +1,12 @@
 # Change log
 
-## [1.0.3] - 2024-01-31:
+## [1.0.5] - 2024-02-28:
 ### Changed
-- If the `title` attribute is missing, the value of the `alt` attribute will be used for its value.If the `alt` attribute was also missing, it will be the file name for both attributes.
+- If the `alt` attribute is missing or empty, it will be assigned the name of the image file. If the `title` attribute is missing or empty, it will be assigned the `alt` attribute value.
+
+## [1.0.4] - 2024-02-25:
+### Changed
+- If the `alt` attribute is missing, it will be assigned the name of the image file. If the `title` attribute is missing, it will be assigned the `alt` attribute value.
 
 ## [1.0.3] - 2024-01-31:
 ### Fixed
